@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,130 +10,6 @@
 
 <body>
     <style>
-        /* new */
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   position: absolute;
-}
-
-.container {
-    width: 100%;
-    max-width: 400px;
-    margin: 60px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    position: relative;
-    left: 580px;
-    top: 50px;
-}
-
-/* Form Styling */
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form input {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px;
-    border: none;
-    background-color: #004d40;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-form button:hover {
-    background-color: #00796b;
-}
-
-/* Links */
-a {
-    color: #004d40;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-    </style>
-    <header>
-        
-    </header>
-    <div class="container">
-        <form id="signupForm">
-            <h2>Sign Up</h2>
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Sign Up</button>
-            <p>Already have an account? <a href="login.html">Login here</a></p>
-        </form>
-    </div>
-
-    <script>
-        document.getElementById('signupForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            const username = document.getElementById('username').value;
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-
-            const response = await fetch('http://localhost:3000/register', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ username, email, password })
-            });
-
-            if (response.ok) {
-                alert('User registered successfully');
-                window.location.href = 'login.html';  // Redirect to login page after successful signup
-            } else {
-                alert('Error registering user');
-            }
-        });
-    </script>
-    <footer>
-       
-    </footer>
-</body>
-
-</html>
- -->
-
- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <style>
-        /* Basic Reset */
         * {
             margin: 0;
             padding: 0;
@@ -158,7 +34,7 @@ a:hover {
         }
 
         header span {
-            color: #66bb6a; /* Green color for FishPlants */
+            color: #66bb6a;
         }
 
         /* Footer Styling */
@@ -182,7 +58,7 @@ a:hover {
             border: 1px solid #ccc;
             border-radius: 10px;
             background-color: #f9f9f9;
-            position: relative;  
+            position: relative;
         }
 
         /* Form Styling */
@@ -223,7 +99,6 @@ a:hover {
         }
     </style>
 
-    <!-- Header Section -->
     <header>
         Welcome to <span>FishPlants</span>
     </header>
@@ -240,7 +115,6 @@ a:hover {
         </form>
     </div>
 
-    <!-- Footer Section -->
     <footer>
         &copy; 2024 FishPlants. All rights reserved.
     </footer>
@@ -273,5 +147,3 @@ a:hover {
 </body>
 
 </html>
-
-
