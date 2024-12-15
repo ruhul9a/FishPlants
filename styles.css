@@ -132,7 +132,7 @@ footer p {
 .developer-info img {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Makes the image circular */
+    border-radius: 50%; 
     border: 2px solid white;
 }
 
