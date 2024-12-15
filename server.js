@@ -9,10 +9,10 @@ const port = 3000;
 
 // MySQL connection
 const db = mysql.createConnection({
-  host: 'localhost',  // MySQL host
-  user: 'root',       // MySQL username
-  password: '',       // MySQL password
-  database: 'fish_plant_db'  // Your database name
+  host: 'localhost',  
+  user: 'root',       
+  password: '',       
+  database: 'fish_plant_db' 
 });
 
 // Connect to MySQL
